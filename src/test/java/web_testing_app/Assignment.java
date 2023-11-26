@@ -91,30 +91,30 @@ public class Assignment {
 		}
 		
 		
-//
-//
-//		// #2: TODO (enter "internet speed test" into the search bar then press the "Return" key)
-//		driver.findElement(/*CODE FRAGMENT*/).sendKeys("internet speed test" + Keys.RETURN);
-//
-//
-//
-//
-//		// #3: TODO (ensure that the "RUN SPEED TEST" button is clickable)
-//		// HINT: the button has attribute id="knowledge-verticals-internetspeedtest__test_button"
-//		try {
-//			shortWait.until(/*CODE FRAGMENT*/);
-//		} catch (TimeoutException ex) {
-//			fail("\"RUN SPEED TEST\" button not found.");
-//		}
-//
-//
-//
-//
+
+
+		// #2: TODO (enter "internet speed test" into the search bar then press the "Return" key)
+		driver.findElement(By.name("q")).sendKeys("internet speed test" + Keys.RETURN);
+
+
+
+
+		// #3: TODO (ensure that the "RUN SPEED TEST" button is clickable)
+		// HINT: the button has attribute id="knowledge-verticals-internetspeedtest__test_button"
+		try {
+			shortWait.until(ExpectedConditions.elementToBeClickable(By.id("knowledge-verticals-internetspeedtest__test_button")));
+		} catch (TimeoutException ex) {
+			fail("\"RUN SPEED TEST\" button not found.");
+		}
+
+
+
+
 //		// #4: TODO (click the "RUN SPEED TEST" button by its "id" attribute)
-//		driver.findElement(/*CODE FRAGMENT*/).click();
+//		driver.findElement(By.id("knowledge-verticals-internetspeedtest__test_button")).click();
 //
-//
-//
+
+
 //
 //		// #5: TODO (ensure that the "CANCEL" button is clickable directly after this)
 //		// HINT: the button is a tag <g-raised-button> with attribute jsaction="dArJMd"
