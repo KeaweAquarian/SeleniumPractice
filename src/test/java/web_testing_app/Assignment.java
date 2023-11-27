@@ -110,33 +110,33 @@ public class Assignment {
 
 
 
-//		// #4: TODO (click the "RUN SPEED TEST" button by its "id" attribute)
-//		driver.findElement(By.id("knowledge-verticals-internetspeedtest__test_button")).click();
-//
+		// #4: TODO (click the "RUN SPEED TEST" button by its "id" attribute)
+		driver.findElement(By.id("knowledge-verticals-internetspeedtest__test_button")).click();
 
 
-//
+
+
 //		// #5: TODO (ensure that the "CANCEL" button is clickable directly after this)
 //		// HINT: the button is a tag <g-raised-button> with attribute jsaction="dArJMd"
 //		try {
-//			shortWait.until(/*CODE FRAGMENT*/);
+//			shortWait.until(ExpectedConditions.elementToBeClickable(By.className("fSXkBc")));
 //		} catch (TimeoutException ex) {
 //			fail("\"CANCEL\" button not found.");
 //		}
-//
-//
-//
-//
-//		// #6: TODO (wait for the test to finish)
-//		// HINT: The "CANCEL" button should not be clickable. Is shortWait long enough?
-//		try {
-//			longWait.until(/*CODE FRAGMENT*/);
-//		} catch (TimeoutException ex) {
-//			fail("Speed test did not finish.");
-//		}
-//
-//
-//
+
+
+
+
+		// #6: TODO (wait for the test to finish)
+		// HINT: The "CANCEL" button should not be clickable. Is shortWait long enough?
+		try {
+			longWait.until(ExpectedConditions.elementToBeClickable(By.className("fSXkBc")));
+		} catch (TimeoutException ex) {
+			fail("Speed test did not finish.");
+		}
+
+
+
 //
 //		// #7: TODO ("RETRY" signifies a failure)
 //		// HINT: the "RETRY" button is a tag <g-raised-button> with attribute jsaction="i0JLwd"
