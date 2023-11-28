@@ -116,44 +116,46 @@ public class Assignment {
 
 
 
-//		// #5: TODO (ensure that the "CANCEL" button is clickable directly after this)
-//		// HINT: the button is a tag <g-raised-button> with attribute jsaction="dArJMd"
-//		try {
-//			shortWait.until(ExpectedConditions.elementToBeClickable(By.className("fSXkBc")));
-//		} catch (TimeoutException ex) {
-//			fail("\"CANCEL\" button not found.");
-//		}
-
-
-
-
-		// #6: TODO (wait for the test to finish)
-		// HINT: The "CANCEL" button should not be clickable. Is shortWait long enough?
+		// #5: TODO (ensure that the "CANCEL" button is clickable directly after this)
+		// HINT: the button is a tag <g-raised-button> with attribute jsaction="dArJMd"
 		try {
-			longWait.until(ExpectedConditions.elementToBeClickable(By.className("fSXkBc")));
+			shortWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"deferred_ist_lightbox_id_2\"]/div[2]/div[3]/g-raised-button/div")));
+//			driver.findElement(By.xpath("//*[@id=\"deferred_ist_lightbox_id_2\"]/div[2]/div[3]/g-raised-button/div")).click();
 		} catch (TimeoutException ex) {
-			fail("Speed test did not finish.");
+			fail("\"CANCEL\" button not found.");
 		}
 
 
 
-//
-//		// #7: TODO ("RETRY" signifies a failure)
-//		// HINT: the "RETRY" button is a tag <g-raised-button> with attribute jsaction="i0JLwd"
+
+//		// #6: TODO (wait for the test to finish)
+//		// HINT: The "CANCEL" button should not be clickable. Is shortWait long enough?
 //		try {
-//			shortWait.until(/*CODE FRAGMENT*/);
-//			fail("Speed test failed to run.");
+//			longWait.until(ExpectedConditions.elementToBeClickable(By.className("fSXkBc")));
 //		} catch (TimeoutException ex) {
-//
+//			fail("Speed test did not finish.");
 //		}
-//
-//
-//
-//
+
+
+
+
+		// #7: TODO ("RETRY" signifies a failure)
+		// HINT: the "RETRY" button is a tag <g-raised-button> with attribute jsaction="i0JLwd"
+		try {
+			shortWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"deferred_ist_lightbox_id_2\"]/div[2]/div[5]/g-raised-button/div")));
+			fail("Speed test failed to run.");
+		} catch (TimeoutException ex) {
+
+		}
+
+
+
+
 //		// #8: TODO ("TEST AGAIN" signifies a success)
 //		// HINT: the "TEST AGAIN" button is a tag <g-raised-button> with attribute jsaction="iyDKIb"
 //		try {
-//			shortWait.until(/*CODE FRAGMENT*/);
+//			shortWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"deferred_ist_lightbox_id_2\"]/div[2]/div[5]/g-raised-button/div")));
+//			driver.findElement(By.xpath("//*[@id=\"deferred_ist_lightbox_id_2\"]/div[2]/div[5]/g-raised-button/div")).click();
 //		} catch (TimeoutException ex) {
 //			fail("Speed test failed to run.");
 //		}
