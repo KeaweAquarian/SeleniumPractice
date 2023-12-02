@@ -401,7 +401,7 @@ public class Assignment {
 		}
 
 
-////////////////////////
+/////////////////////////////////////////////
 
 		// #22: TODO (press "AC" button and check whether the value was cleared)
 		// HINT: the clear button is a div with jsname="SLn8gc"
